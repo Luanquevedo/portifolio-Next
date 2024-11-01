@@ -1,0 +1,11 @@
+@import './_variables';
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('../../public/images/background.svg');
+    background-size: 100%;
+    background-repeat: repeat-y;
+    color: $primaryColor;
+    font-family: $font;
+    
+}

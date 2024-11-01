@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.container {
+    width: 70vw;
+    margin: 0vw auto;
+    padding: 3.5vw;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: justify;
+    background-color: $baclgroundColor;
+    line-height: 1.5rem;
+
+    &__Header {
+        font-size: $fontSize2;
+        font-weight: $fontSemiBold;
+
+    }
+
+    &__Section1 {
+        font-weight: $fontLigth;
+        font-size: $fontSize3;
+    }
+
+    &__Footer {
+        font-size: $fontSize3;
+
+        button {
+            background-color: $backgroundButton;
+            font-size: $fontSize3;
+            font-weight: $fontSemiBold;
+            color: $secondaryColor;
+            padding: 1rem;
+            text-align: center;
+            width: 13rem;
+            height: 3rem;
+            border: none;
+            border-radius: 99999px;
+        }
+
+        button:hover {
+            background-color: $hoverButton;
+            color: $primaryColor;
+            box-shadow: 2px 1px $backgroundButton ;
+            transform: translateY(-7px);
+            transition-duration: 0.6s;
+        }
+    }
+}
