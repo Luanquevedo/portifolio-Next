@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-$primaryColor: #ffffff;
-$secondaryColor: #303030;
-$backgroundButton: #EAB955;
-$hoverButton: #a07c33;
-$baclgroundColor:rgba(31, 49, 66, 0.418);
+$backgroundColor: #050607;
 
-$font: montserrat;
-
-$fontSize1: 32px;
-$fontSize2: 25px;
-$fontSize3: 17px;
-$fontSize4: 13px;
-
+$fontLight: 400;
+$fontRegular: 600;
 $fontBold: 800;
-$fontSemiBold: 700;
-$fontRegular: 500;
-$fontLigth: 400;
+
+$gradientGold: linear-gradient(90deg, 
+  #D99A01 0%, 
+  #9F6605 49%, 
+  #EFB62B 100%
+);
+

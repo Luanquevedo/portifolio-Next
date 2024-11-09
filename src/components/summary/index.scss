@@ -1,49 +1,45 @@
-@import '../../styles/variables';
+@use '../../styles/variables' as *;
+@import '../../styles/mixin.scss';
 
-.container {
-    width: 70vw;
-    margin: 0vw auto;
-    padding: 3.5vw;
+.summary {
+    background-image: url('../../../public/images/background.svg');
+    background-size: 100%;
     display: flex;
-    border-radius: 20px;
-    flex-direction: column;
-    text-align: justify;
-    background-color: $baclgroundColor;
-    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    gap: 6rem;
 
-    &__Header {
-        font-size: $fontSize2;
-        font-weight: $fontSemiBold;
+    &__Content {
+        width: 30rem;
+        text-align: justify;
+        h1 {
+            font-size: 35px;
+            font-weight: $fontBold;
+            @include gradient-text
+        }
+
+        h2 {
+            font-weight: $fontBold;
+            font-size: 35px;
+            @include gradient-text
+        }
+
+        &__Text {
+            
+            font-size: 22px;
+            font-weight: $fontLight;
+            color: white;
+
+        }
 
     }
 
-    &__Section1 {
-        font-weight: $fontLigth;
-        font-size: $fontSize3;
-    }
 
-    &__Footer {
-        font-size: $fontSize3;
 
-        button {
-            background-color: $backgroundButton;
-            font-size: $fontSize3;
-            font-weight: $fontSemiBold;
-            color: $secondaryColor;
-            padding: 1rem;
-            text-align: center;
-            width: 13rem;
-            height: 3rem;
-            border: none;
-            border-radius: 99999px;
-        }
 
-        button:hover {
-            background-color: $hoverButton;
-            color: $primaryColor;
-            box-shadow: 2px 1px $backgroundButton ;
-            transform: translateY(-7px);
-            transition-duration: 0.6s;
-        }
+
+    img {
+        width: 30rem;
     }
 }

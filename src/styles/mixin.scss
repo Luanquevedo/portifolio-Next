@@ -1,0 +1,7 @@
+@mixin gradient-text {
+    background: $gradientGold; // Define o gradiente como fundo
+    -webkit-background-clip: text; // Recorta o fundo para o texto
+    -webkit-text-fill-color: transparent; // Faz o texto transparente
+    background-clip: text; // Recorta o fundo para o texto (sem prefixo)
+    text-fill-color: transparent; // Faz o texto transparente (sem prefixo)
+}
