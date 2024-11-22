@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $backgroundColor: #050607;
+$font: 'Cinzel', sans-serif;
 
-$fontLight: 400;
-$fontRegular: 600;
-$fontBold: 800;
+$fontLight: 300;
+$fontRegular: 500;
+$fontBold: 700;
 
-$gradientGold: linear-gradient(90deg, 
+$gradientGold: linear-gradient(330deg, 
   #D99A01 0%, 
-  #9F6605 49%, 
+  #bd7d0f 50%, 
   #EFB62B 100%
 );
 
+$gradientLightGold: linear-gradient(170deg, 
+  #fddb86 0%, 
+  #EFB62B 50%, 
+  #FFCD74 100%
+);

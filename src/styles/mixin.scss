@@ -5,3 +5,12 @@
     background-clip: text; // Recorta o fundo para o texto (sem prefixo)
     text-fill-color: transparent; // Faz o texto transparente (sem prefixo)
 }
+
+@mixin gradient-button-b{
+    background: $gradientLightGold;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+

@@ -11,12 +11,12 @@ const Summary = () => {
                     Next.js, Node.js, MongoDB e PostgreSQL,
                     focado em soluções escaláveis e de alta qualidade.
                 </p>
-                <div>
-                    <button>Projetos</button>
-                    <button>Conectar-se</button>
+                <div className='summary__Content__Button'>
+                    <button className='summary__Button'>Projetos</button>
+                    <button className='summary__Button'>Conectar-se</button>
                 </div>
             </div>
-            <img src='images/photo.png' />
+            <img src='images/photo.svg' />
         </article>
     )
 }
