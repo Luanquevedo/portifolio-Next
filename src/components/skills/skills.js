@@ -7,18 +7,17 @@ const Skills = () => {
 
                 <header className='skills__Header'>
                     <h1>Habilidades</h1>
-                    <p>Conheça um pouco das minhas principais habilidades e conhecimentos.</p>
                 </header>
                 <section className='skills__Section1'>
-                    <img src='images/js.png' />
-                    <img src='images/next.png' />
-                    <img src='images/react.png' />
-                    <img src='images/node.png' />
-                    <img src='images/postgre.png' />
-                    <img src='images/mongo.png' />
-                    <img src='images/express.png' />
-                    <img src='images/html.png' />
-                    <img src='images/css.png' />
+                    <img className='skills__Section1__Item' src='images/js.png' />
+                    <img className='skills__Section1__Item' src='images/next.png' />
+                    <img className='skills__Section1__Item' src='images/react.png' />
+                    <img className='skills__Section1__Item' src='images/node.png' />
+                    <img className='skills__Section1__Item' src='images/postgre.png' />
+                    <img className='skills__Section1__Item' src='images/mongo.png' />
+                    <img className='skills__Section1__Item' src='images/express.png' />
+                    <img className='skills__Section1__Item' src='images/html.png' />
+                    <img className='skills__Section1__Item' src='images/css.png' />
                 </section>
             </article>
         </div>
