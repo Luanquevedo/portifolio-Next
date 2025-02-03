@@ -1,6 +1,28 @@
 @use '../../styles/variables' as *;
 @import '../../styles/mixin.scss';
 
-.containerFooter{
-    color: white;
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__Content {
+        color: white;
+    }
+
+    &__Button{
+        display: flex;
+        gap: 20px;
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+    
+            img {
+                width: 50px;
+            }
+        }
+    }
+    
 }

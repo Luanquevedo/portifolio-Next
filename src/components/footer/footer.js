@@ -4,10 +4,10 @@ import './index.scss'
 const Footer = () => {
     return (
         <footer className='containerFooter'>
-            <div>
+            <div className='containerFooter__Content'>
                 <p>Entre em contato para oportunidades ou apenas para dizer oi! 👋</p>
             </div>
-            <div>
+            <div className='containerFooter__Button'>
                 <button>
                     <img src='images/github.svg' />
                 </button>
