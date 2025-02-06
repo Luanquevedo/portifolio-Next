@@ -9,9 +9,9 @@
     justify-content: center;
     align-items: center;
     height: 50vw;
-    gap: 15vw;
+    gap: 20vw;
     img{
-        width: 32%;
+        width: 28%;
     }
 
     &__Content {
@@ -23,20 +23,20 @@
 
 
         h1 {
-            font-size: 28px;
+            font-size: 29px;
             font-weight: $fontBold;
             @include gradient-text
         }
 
         h2 {
             font-weight: $fontBold;
-            font-size: 28px;
+            font-size: 29px;
             @include gradient-text
         }
 
         &__Text {
             line-height: 2;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: $fontLight;
             color: white;
 
@@ -53,7 +53,7 @@
                 width: 15vw;
                 height: 3vw;
                 display: flex;
-                font-size: 20px;
+                font-size: 26px;
                 font-weight: $fontLight;
                 align-items: center;
                 justify-content: center;

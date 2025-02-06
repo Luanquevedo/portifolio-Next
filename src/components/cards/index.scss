@@ -1,0 +1,76 @@
+@use '../../styles/variables' as *;
+@import '../../styles/mixin.scss';
+
+.container {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    font-weight: $fontRegular;
+
+    &__Text{
+      
+      font-size: 20px;
+      margin-right: 100px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 20px;
+      color: rgb(177, 182, 189);
+
+      h2{
+        @include gradient-text;
+      }
+      a{
+        color: rgb(180, 182, 185);
+        font-size: 25px;
+      }
+    }
+
+    &__Carousel {
+      padding: 0px 50px;
+      display: flex;
+      justify-content: space-around;
+      scroll-behavior: smooth;
+      overflow-x: auto;
+    }
+  }
+  
+  
+  
+  .carousel-card {
+    background-color: transparent;
+    opacity: 0; // Inicialmente invisível até que as imagens carreguem
+  
+    &.loaded {
+      opacity: 1; // Quando as imagens estiverem carregadas, fica visível
+    }
+  
+    .carousel-image {
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    &.prev-btn {
+      left: 10px;
+    }
+  
+    &.next-btn {
+      right: 10px;
+    }
+  }
+  
+ 
