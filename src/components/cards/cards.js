@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import './index.scss';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
