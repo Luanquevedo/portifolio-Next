@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @mixin gradient-text {
     background: $gradientGold; // Define o gradiente como fundo
     -webkit-background-clip: text; // Recorta o fundo para o texto

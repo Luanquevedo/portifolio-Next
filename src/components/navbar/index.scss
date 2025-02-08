@@ -73,3 +73,36 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        left: 0;
+        width: 100vw;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12vw;
+        background: linear-gradient(90deg,
+                rgba(10, 12, 16, 0.3) 30%,
+                /* Cor #0A0C10 com 30% de opacidade */
+                rgba(16, 24, 34, 1) 100%
+                /* Cor #101822 totalmente opaca */
+            );
+    
+        img {
+            width: 20vw;
+        }
+    
+        &__Itens {
+            display: flex;
+            gap: 10px;
+            margin-right: 10vw;
+    
+            a {
+                font-size: 10px;    
+            }
+        }
+    }
+}

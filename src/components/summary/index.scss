@@ -1,5 +1,5 @@
 @use '../../styles/variables' as *;
-@import '../../styles/mixin.scss';
+@use '../../styles/mixin' as *;;
 
 .summary {
     background-image: url('../../../public/images/background.svg');
@@ -146,3 +146,62 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .summary {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        height: 50vw;
+        gap: 0vw;
+    
+        img {
+            width: 28%;
+        }
+    
+        &__Content {
+            width: 20rem;
+    
+    
+    
+            h1 {
+                font-size: 14px;
+
+            }
+    
+            h2 {
+                font-weight: $fontBold;
+                font-size: 14px;
+                @include gradient-text
+            }
+    
+            &__Text {
+                line-height: 1.5;
+                font-size: 12px;
+    
+            }
+    
+            &__Button {
+                gap: 3vw;
+                margin-top: 1.5rem;
+                justify-content: center;
+    
+                Button {
+                    @include gradient-button-b;
+                    width: 25vw;
+                    height: 7vw;
+                    
+                    font-size: 12px;
+                    font-weight: $fontLight;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                }
+            }
+    
+        }
+    
+        img {
+            width: 10rem;
+        }
+    }
+  }
