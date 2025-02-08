@@ -1,5 +1,5 @@
 @use '../../styles/variables' as *;
-@import '../../styles/mixin.scss';
+@use '../../styles/mixin' as *;
 
 .container {
     position: relative;
@@ -138,6 +138,42 @@
     
       &.next-btn {
         right: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 100vw;
+      margin-top: 150px;
+      margin-bottom: 100px;
+
+      img{
+        width: 80%;
+      }
+  
+      &__Text{
+    
+        font-size: 8px;
+        margin-bottom: 10px;
+        gap: 5px;
+
+  
+        h2{
+          @include gradient-text;
+        }
+        a{
+          font-size: 10px;
+        }
+      }
+  
+      &__Carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 100px;
       }
     }
   }

@@ -23,7 +23,7 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % projetos.length);
-    }, 10000); // 10 segundos para mudança de slide
+    }, 5000); // 10 segundos para mudança de slide
 
     return () => clearInterval(interval);
   }, []);
@@ -46,7 +46,7 @@ export default function Carousel() {
         <a>Visualizar mais</a>
       </div>
       <div className="container__Carousel">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           {currentProjects.map((projeto) => (
             <motion.div
               key={projeto.id}

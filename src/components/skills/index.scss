@@ -1,5 +1,5 @@
 @use '../../styles/variables' as *;
-@import '../../styles/mixin.scss';
+@use '../../styles/mixin' as *;
 
 .skills {
     width: 95vw;
@@ -68,6 +68,26 @@
 
             &__Item {
                 width: 110px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    .skills {
+
+        &__Header {
+            margin-left: 5vw;
+            font-size: 12px;
+        }
+
+        &__Section1 {
+            padding: 2vw 15vw 3vw 15vw;
+            gap: 3.5vw;
+
+            &__Item {
+                width: 50px;
             }
         }
     }
