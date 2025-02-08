@@ -15,6 +15,7 @@
     }
 
     &__Content {
+        max-width: 1920px;
         width: 30rem;
         text-align: justify;
         display: flex;
@@ -62,14 +63,42 @@
         }
 
     }
-
+    img {
+        width: 30rem;
+    }
 }
 
 
 
-
-
-
-img {
-    width: 30rem;
+@media (min-width: 2500px){
+    .summary {
+        margin-top: -7vw;
+        margin-bottom: -200px;
+        img{
+            width: 28%;
+        }
+    
+        &__Content {
+            max-width: 1920px;        
+            
+    
+            &__Button {
+                gap: 3vw;
+                margin-top: 1.5rem;
+    
+                Button {
+                    width: 15vw;
+                    height: 2vw;
+                    font-size: 26px;
+                    border-radius: 10px;
+                }
+            }
+    
+        }
+        img {
+            width: 30rem;
+        }
+    }
 }
+
+

@@ -5,10 +5,10 @@
     width: 95vw;
     margin: 0vw auto;
     color: white;
-    
-    
-    
-    &__Header{
+
+
+
+    &__Header {
         @include gradient-text;
         font-weight: $fontRegular;
         font-size: 25px;
@@ -30,6 +30,25 @@
 
             &:hover {
                 transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media (min-width: 2500px) {
+    .skills {
+        max-width: 1920px;
+
+        &__Header {
+            margin-left: 4vw;
+        }
+
+        &__Section1 {
+            padding: 3vw 15vw 3vw 15vw;
+            gap: 2vw;
+
+            &__Item {
+                width: 150px;
             }
         }
     }

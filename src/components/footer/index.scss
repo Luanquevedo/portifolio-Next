@@ -10,19 +10,36 @@
         color: white;
     }
 
-    &__Button{
+    &__Button {
         display: flex;
         gap: 20px;
+
         button {
             background: none;
             border: none;
             padding: 0;
             cursor: pointer;
-    
+
             img {
                 width: 50px;
             }
         }
     }
-    
+
+}
+
+@media (min-width: 2500px) {
+    .containerFooter {
+        margin-bottom: 20px;
+
+        &__Button {
+
+            button {
+                img {
+                    width: 55px;
+                }
+            }
+        }
+
+    }
 }
