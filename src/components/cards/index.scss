@@ -85,3 +85,59 @@
       top: 65%;
     }
   }
+
+  @media (max-width: 1900px) {
+    .container {
+      width: 100vw;
+      margin: 0 auto;
+      margin-bottom: 100px;
+
+      img{
+        width: 95%;
+      }
+  
+      &__Text{
+        
+        font-size: 17px;
+        margin-bottom: 50px;
+        gap: 10px;
+
+  
+        h2{
+          @include gradient-text;
+        }
+        a{
+          font-size: 19px;
+        }
+      }
+  
+      &__Carousel {
+        padding: 0px 100px;
+      }
+    }
+    
+    
+    
+    .carousel-card {
+
+    
+      .carousel-image {
+        margin-bottom: 10px;
+      }
+    }
+    
+    .carousel-btn {
+      top: 65%;
+ 
+      padding: 8px;
+      border-radius: 50%;
+    
+      &.prev-btn {
+        left: 40px;
+      }
+    
+      &.next-btn {
+        right: 40px;
+      }
+    }
+  }

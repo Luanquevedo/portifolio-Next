@@ -43,3 +43,21 @@
 
     }
 }
+
+@media (max-width: 1900px) {
+    .containerFooter {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        &__Button {
+
+            button {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+}

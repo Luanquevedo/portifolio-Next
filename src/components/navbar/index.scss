@@ -57,3 +57,19 @@
         }
     }
 }
+
+@media (max-width: 1900px) {
+    .navbar {
+        padding: 30px;
+        gap: 20vw;
+
+
+        &__Itens {
+            gap: 25px;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
