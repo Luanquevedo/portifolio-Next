@@ -34,6 +34,12 @@
             text-decoration: none;
             color: white;
 
+            
+        }
+        :hover{
+            color: #EFB62B;
+            transition-duration: 0.4s;
+            transform: scale(1.1)translatey(-0.2rem);
         }
     }
 }

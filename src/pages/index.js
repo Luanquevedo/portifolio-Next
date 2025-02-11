@@ -7,14 +7,25 @@ import Carousel from "@/components/cards/cards";
 
 
 export default function Home() {
-    return (
-      <div>
-        <Navbar/>
-        <Summary/>
-        <Carousel/>
-        <Skills/>
-        <Footer/>
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <Navbar />
+      <section id="sumarry">
+        <Summary />
+      </section>
+      <section id="projects">
+        <Carousel />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
+
+
+
+
+    </div>
+  );
+}
