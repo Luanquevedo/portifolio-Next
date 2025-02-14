@@ -2,9 +2,8 @@
 @use '../../styles/mixin' as *;
 
 .summary {
-    background-image: url('../../../public/images/background.svg');
+    background-image: url('../../../public/images/background.svg') no-repeat center/cover;
     margin-top: 50px;
-    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,33 +11,28 @@
     gap: 20vw;
 
     img {
-        width: 28%;
+        width: clamp(10rem, 28%, 30rem);
     }
 
     &__Content {
         max-width: 1920px;
-        width: 30rem;
+        width: clamp(20rem, 30%, 30rem);
         text-align: justify;
         display: flex;
         flex-direction: column;
 
 
 
-        h1 {
-            font-size: 29px;
-            font-weight: $fontBold;
-            @include gradient-text
-        }
-
+        h1,
         h2 {
+            font-size: clamp(14px, 2vw, 29px);
             font-weight: $fontBold;
-            font-size: 29px;
             @include gradient-text
         }
 
         &__Text {
-            line-height: 2;
-            font-size: 19px;
+            line-height: 1.8;
+            font-size: clamp(12px, 1.5rem, 19px);
             font-weight: $fontLight;
             color: white;
 
@@ -49,24 +43,28 @@
             flex-direction: row;
             gap: 3vw;
             margin-top: 1.5rem;
+            justify-content: center;
 
             Button {
                 @include gradient-button-b;
-                width: 15vw;
-                height: 3vw;
-                display: flex;
-                font-size: 26px;
+                width: clamp(15vw, 20rem, 25rem);
+                height: clamp(3vw, 3rem, 7rem);
+                font-size: clamp(12px, 1.5rem, 26px);
                 font-weight: $fontLight;
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: rgb(51, 51, 51);
+                    box-shadow: rgba(255, 255, 255, 0.192) 3px 5px;
+                    transform: scale(1.02) translateY(-0.3rem);
+                }
             }
         }
 
-    }
-
-    img {
-        width: 30rem;
     }
 }
 
@@ -74,144 +72,116 @@
 
 @media (min-width: 2500px) {
     .summary {
-        margin-top: -7vw;
-        margin-bottom: -200px;
+        margin-top: -10rem;
+        margin-bottom: -13rem;
 
-        img {
-            width: 28%;
-        }
+
 
         &__Content {
             max-width: 1920px;
 
 
             &__Button {
-                gap: 3vw;
-                margin-top: 1.5rem;
 
                 Button {
-                    width: 15vw;
-                    height: 2vw;
-                    font-size: 26px;
-                    border-radius: 10px;
+                    height: 4rem;
+                    font-size: 1.8rem;
                 }
             }
 
         }
 
-        img {
-            width: 30rem;
-        }
+
     }
 }
 
 
 @media (max-width:1900px) {
     .summary {
-        margin-top: 35px;
-        gap: 15vw;
+        margin-top: 1rem;
+        gap: 14rem;
 
         &__Content {
             width: 26rem;
 
-            h1 {
-                font-size: 25px;
-            }
+            h1,
             h2 {
-                font-size: 26px;
+                font-size: 1.5rem;
             }
+
 
             &__Text {
                 line-height: 1.8;
-                font-size: 16px;
+                font-size: 1rem;
             }
 
             &__Button {
-                gap: 4vw;
-                margin-top: 1rem;
 
                 Button {
-                    width: 15vw;
-                    height: 3vw;
-                    font-size: 20px;
-                    border-radius: 5px;
+                    width: 15rem;
+                    height: 2.5rem;
+                    font-size: 1.5rem;
                 }
             }
 
         }
 
-        img {
-            width: 24rem;
-        }
     }
 
 }
 
 @media (max-width: 768px) {
     .summary {
-        margin-top: 100px;
+        margin-top: 13rem;
         flex-direction: column-reverse;
-        height: 50vw;
-        gap: 0vw;
-    
-        img {
-            width: 28%;
-        }
-    
+        gap: 1rem;
+
         &__Content {
             width: 20rem;
-    
-            a{
+
+            a {
                 text-decoration: none;
-                
-            }
-            h1 {
-                font-size: 14px;
 
             }
-    
-            h2 {
+
+            h1, h2 {
                 font-weight: $fontBold;
-                font-size: 14px;
+                font-size: 1.2rem;
                 @include gradient-text
             }
-    
+
+          
+
             &__Text {
                 line-height: 1.5;
-                font-size: 12px;
-    
+                font-size: 1rem;
+
             }
-    
+
             &__Button {
                 gap: 3vw;
                 margin-top: 1.5rem;
                 justify-content: center;
-    
+
                 Button {
                     @include gradient-button-b;
                     width: 25vw;
                     height: 7vw;
-                    
+
                     font-size: 12px;
                     font-weight: $fontLight;
                     align-items: center;
                     justify-content: center;
                     border-radius: 10px;
-                    
+
                 }
-                
+
             }
         }
-    
+
         img {
             width: 10rem;
         }
     }
-   
-  }
-  .summary__Button:hover{
-    color: rgb(51, 51, 51);
-    transition-duration: 0.6s;
-    box-shadow: rgba(255, 255, 255, 0.192) 3px 5px;
-    transform: scale(1.02) translatey(-0.3rem);
+
 }

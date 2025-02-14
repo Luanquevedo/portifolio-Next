@@ -38,6 +38,7 @@
     }
 }
 
+//telas ultrawide
 @media (min-width: 2500px) {
     .navbar {
         padding: 1.5rem;
@@ -46,12 +47,13 @@
 
 
 
-        &__Itens {  
-            gap: 3rem;            
+        &__Itens {
+            gap: 3rem;
         }
     }
 }
 
+//telas grandes
 @media (max-width: 1900px) {
     .navbar {
         padding: 20px;
@@ -68,12 +70,13 @@
     }
 }
 
+//telas pequenas/medias
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem;
 
         img {
-            width:12rem;
+            width: 12rem;
         }
 
         &__Itens {
