@@ -70,21 +70,14 @@
 
 @media (max-width: 768px) {
     .navbar {
-        left: 0;
-        width: 100vw;
-        padding: 2rem;
-        gap: 12vw;
+        padding: 1rem;
 
         img {
-            width:7rem;
+            width:12rem;
         }
 
         &__Itens {
-            gap: 0.5rem;
-
-            a {
-                font-size: 0.5rem;
-            }
+            display: none;
         }
     }
 }
