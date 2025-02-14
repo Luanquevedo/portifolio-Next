@@ -13,7 +13,7 @@ const Summary = () => {
                 </p>
                 <div className='summary__Content__Button'>
                     <button className='summary__Button'>Projetos</button>
-                    <button className='summary__Button'>Conectar-se</button>
+                    <button className='summary__Button' onClick={() => window.open('https://www.linkedin.com/in/luan-quevedo/', "_blank")}>Conectar-se</button>
                 </div>
             </div>
             <img src='images/photo.svg' />

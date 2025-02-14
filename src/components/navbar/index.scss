@@ -4,41 +4,35 @@
 .navbar {
     position: fixed;
     top: 0;
-    z-index: 9999;
     left: 0;
     width: 100vw;
-    padding: 30px;
+    padding: 2rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 32vw;
-    background: linear-gradient(90deg,
-            rgba(10, 12, 16, 0.3) 30%,
-            /* Cor #0A0C10 com 30% de opacidade */
-            rgba(16, 24, 34, 1) 100%
-            /* Cor #101822 totalmente opaca */
-        );
+    gap: 3rem;
+    background-color: rgba(16, 24, 34, 1);
+    z-index: 9999;
 
     img {
-        width: 20vw;
+        width: 20rem;
     }
 
     &__Itens {
         display: flex;
-        gap: 50px;
-        margin-right: 10vw;
+        gap: 3rem;
+        margin-right: 5rem;
 
         a {
-            font-size: 17px;
+            font-size: 1rem;
             text-decoration: none;
             color: white;
-
-            
+            cursor: pointer;
+            transition: color 0.4s ease, transform 0.4s ease;
         }
-        :hover{
+
+        :hover {
             color: #EFB62B;
-            transition-duration: 0.4s;
             transform: scale(1.1)translatey(-0.2rem);
         }
     }
@@ -46,35 +40,29 @@
 
 @media (min-width: 2500px) {
     .navbar {
-        padding: 30px;
-        justify-content: center;
-        gap: 30vw;
+        padding: 1.5rem;
+        justify-content: space-between;
 
-        img {
-            width: 12vw;
-        }
 
-        &__Itens {
-            gap: 50px;
 
-            a {
-                font-size: 18px;
-            }
+
+        &__Itens {  
+            gap: 3rem;            
         }
     }
 }
 
 @media (max-width: 1900px) {
     .navbar {
-        padding: 30px;
+        padding: 20px;
         gap: 20vw;
 
 
         &__Itens {
-            gap: 25px;
+            gap: 2rem;
 
             a {
-                font-size: 14px;
+                font-size: 1rem;
             }
         }
     }
@@ -84,30 +72,18 @@
     .navbar {
         left: 0;
         width: 100vw;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        padding: 2rem;
         gap: 12vw;
-        background: linear-gradient(90deg,
-                rgba(10, 12, 16, 0.3) 30%,
-                /* Cor #0A0C10 com 30% de opacidade */
-                rgba(16, 24, 34, 1) 100%
-                /* Cor #101822 totalmente opaca */
-            );
-    
+
         img {
-            width: 20vw;
+            width:7rem;
         }
-    
+
         &__Itens {
-            display: flex;
-            gap: 10px;
-            margin-right: 10vw;
-    
+            gap: 0.5rem;
+
             a {
-                font-size: 10px;    
+                font-size: 0.5rem;
             }
         }
     }

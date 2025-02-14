@@ -9,17 +9,31 @@ const Footer = () => {
             </div>
             <div className='containerFooter__Button'>
                 <button>
-                    <img src='images/github.svg' />
+                    <a href='https://github.com/Luanquevedo' target='blank'>
+                        <img src='images/github.svg' />
+                    </a>
+
                 </button>
                 <button>
-                    <img src='images/linkedin.svg' />
+                    <a href='https://www.linkedin.com/in/luan-quevedo/' target='blank'>
+                        <img src='images/linkedin.svg' />
+                    </a>
                 </button>
                 <button>
-                    <img src='images/instagram.svg' />
+                    <a href='https://www.instagram.com/luanquevedo99/' target='blank'>
+                        <img src='images/instagram.svg' />
+                    </a>
                 </button>
                 <button>
-                    <img src='images/email.svg' />
+                    <a href='https://github.com/Luanquevedo' target='blank'>
+                        <img src='images/email.svg' />
+                    </a>
                 </button>
+            </div>
+            <div className='containerFooter__Contact'>
+                <p>Luan Quevedo © 2025</p>
+                <p>|</p>
+                <p>luan.quevedo@hotmail.com</p>
             </div>
         </footer>
     )

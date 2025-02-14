@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    color: white;
     &__Content {
         color: white;
     }
@@ -23,7 +23,22 @@
             img {
                 width: 50px;
             }
+
+            &:hover {
+
+                transition-duration: 0.5s;
+                transform: scale(1.1)translatey(-0.2rem);
+            }
         }
+    }
+
+    &__Contact{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+        font-size: 15px;
+        text-transform: none;
     }
 
 }

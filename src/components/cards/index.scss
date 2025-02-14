@@ -24,9 +24,17 @@
         @include gradient-text;
       }
       a{
-        color: rgb(180, 182, 185);
+        color: white;
         font-size: 25px;
+
+        
       }
+      a:hover{
+        color: #EFB62B;
+        text-shadow: #ffffff28 1px 3px;
+        transition-duration: 0.4s;
+        transform: scale(1.1)translatey(-0.2rem);
+    }
     }
 
     &__Carousel {
@@ -51,6 +59,7 @@
     .carousel-image {
       object-fit: cover;
       margin-bottom: 10px;
+      
     }
   }
   
