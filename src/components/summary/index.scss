@@ -69,7 +69,7 @@
 }
 
 
-
+//responsividade ultrawide
 @media (min-width: 2500px) {
     .summary {
         margin-top: -10rem;
@@ -95,7 +95,7 @@
     }
 }
 
-
+//responsividade telas grandes
 @media (max-width:1900px) {
     .summary {
         margin-top: 1rem;
@@ -130,6 +130,7 @@
 
 }
 
+//responsividade telas pequenas/medias
 @media (max-width: 768px) {
     .summary {
         margin-top: 15rem;
@@ -144,13 +145,14 @@
 
             }
 
-            h1, h2 {
+            h1,
+            h2 {
                 font-weight: $fontBold;
                 font-size: 1.2rem;
                 @include gradient-text
             }
 
-          
+
 
             &__Text {
                 line-height: 1.5;
@@ -159,28 +161,17 @@
             }
 
             &__Button {
-                gap: 3vw;
-                margin-top: 1.5rem;
-                justify-content: center;
+                gap: 2rem;
+                margin-top: 1rem;
 
                 Button {
                     @include gradient-button-b;
-                    width: 25vw;
-                    height: 7vw;
-
-                    font-size: 12px;
-                    font-weight: $fontLight;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 10px;
-
+                    width: 9rem;
+                    height: 2rem;
+                    font-size: 1.2rem;
                 }
 
             }
-        }
-
-        img {
-            width: 10rem;
         }
     }
 
