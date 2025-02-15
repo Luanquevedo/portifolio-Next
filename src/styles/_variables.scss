@@ -2,11 +2,13 @@
 @use 'sass:color';
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $backgroundColor: #050607;
 $font: 'Cinzel', sans-serif;
+$font2: 'Montserrat', sans-serif;
 
-$fontLight: 300;
+$fontLight: 350;
 $fontRegular: 500;
 $fontBold: 700;
 
