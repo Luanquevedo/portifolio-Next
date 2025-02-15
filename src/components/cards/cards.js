@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const projetos = [
-  { id: 1, title: 'Card 1', description: 'Descrição do card 1', image: '/images/plugow.svg' },
-  { id: 2, title: 'Card 2', description: 'Descrição do card 2', image: '/images/brazilian.svg' },
-  { id: 3, title: 'Card 3', description: 'Descrição do card 3', image: '/images/morais.svg' },
-  { id: 4, title: 'Card 4', description: 'Descrição do card 4', image: '/images/innovar.svg' },
+  { id: 1, title: 'Partnership', tecnology: "tecnologias", description: 'Descrição do card 1', image: '/images/plugow.svg' },
+  { id: 2, title: 'Brazilian Hands', tecnology: "tecnologias", description: 'Descrição do card 2', image: '/images/brazilian.svg' },
+  { id: 3, title: 'Morais & Ribeiro', tecnology: "tecnologias", description: 'Descrição do card 3', image: '/images/morais.svg' },
+  { id: 4, title: 'Innovar', tecnology: "tecnologias", description: 'Descrição do card 4', image: '/images/innovar.svg' },
 ];
 
 export default function Carousel() {
