@@ -46,7 +46,7 @@
             gap: 3vw;
             margin-top: 1.5rem;
             justify-content: center;
-            
+
 
             Button {
                 @include gradient-button-b;
@@ -140,8 +140,8 @@
         margin-top: 15rem;
         flex-direction: column-reverse;
         gap: 1rem;
-        
-        
+
+
 
         &__Content {
             width: 20rem;
@@ -163,7 +163,7 @@
             &__Text {
                 line-height: 1.5;
                 font-size: 1rem;
-                
+
 
             }
 
@@ -173,6 +173,8 @@
 
                 Button {
                     @include gradient-button-b;
+                    font-weight: $fontLight;
+                    font-family: $font2;
                     width: 9rem;
                     height: 2rem;
                     font-size: 1.2rem;
