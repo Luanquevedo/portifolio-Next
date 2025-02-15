@@ -17,7 +17,7 @@ const Summary = () => {
                     <button className='summary__Button' onClick={() => window.open('https://www.linkedin.com/in/luan-quevedo/', "_blank")}>Conectar-se</button>
                 </nav>
             </div>
-                <img src='images/photo.svg' alt="Foto Luan Quevedo" />
+            <img src='images/photo.svg' alt="Foto Luan Quevedo" />
         </article>
     )
 }
