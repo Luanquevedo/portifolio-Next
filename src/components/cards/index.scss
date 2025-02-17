@@ -8,6 +8,8 @@
     overflow: hidden;
     margin-bottom: 100px;
     font-weight: $fontRegular;
+    
+
 
     &__Text{
       
@@ -37,50 +39,44 @@
     }
     }
 
-    &__Carousel {
-      padding: 0px 50px;
+    &__Carrousel{
       display: flex;
-      justify-content: space-around;
-      scroll-behavior: smooth;
-      overflow-x: auto;
-    }
-  }
-  
-  
-  
-  .carousel-card {
-    background-color: transparent;
-    opacity: 0; // Inicialmente invisível até que as imagens carreguem
-  
-    &.loaded {
-      opacity: 1; // Quando as imagens estiverem carregadas, fica visível
-    }
-  
-    .carousel-image {
-      object-fit: cover;
-      margin-bottom: 10px;
+      flex-direction: column;
+      padding: 3rem;
+      justify-content: center;
+      color: white;
       
+      &__Content{
+        display: flex;
+        
+        gap: 2rem;
+
+        &__Text{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 1.2rem;
+          
+
+          a{
+            @include gradient-button-b;
+            font-weight: $fontLight;
+            font-family: $font2;
+            text-decoration: none;
+            border-radius: 1rem;
+            padding: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
+
   }
+
   
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
+ 
   
-    &.prev-btn {
-      left: 10px;
-    }
   
-    &.next-btn {
-      right: 10px;
-    }
-  }
   
   @media (min-width: 2500px){
     .container {
@@ -89,10 +85,7 @@
       font-weight: $fontRegular;
     }
     
-    .carousel-btn {
-      position: absolute;
-      top: 65%;
-    }
+
   }
 
   @media (max-width: 1900px) {
@@ -101,9 +94,6 @@
       margin: 0 auto;
       margin-bottom: 100px;
 
-      img{
-        width: 95%;
-      }
   
       &__Text{
         
@@ -118,10 +108,6 @@
         a{
           font-size: 19px;
         }
-      }
-  
-      &__Carousel {
-        padding: 0px 100px;
       }
     }
     
@@ -156,10 +142,6 @@
       width: 100vw;
       margin-top: 150px;
       margin-bottom: 100px;
-
-      img{
-        width: 80%;
-      }
   
       &__Text{
     
@@ -174,15 +156,6 @@
         a{
           font-size: 10px;
         }
-      }
-  
-      &__Carousel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0px 100px;
       }
     }
   }
