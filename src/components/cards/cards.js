@@ -8,10 +8,10 @@ import 'swiper/css/pagination';
 import { color } from "framer-motion";
 
 const projetos = [
-  { id: 1, title: 'Partnership', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Html, Tailwind css, Typescript", description: 'Projeto realizado com intuito de captar candidatos paraplataforma de beneficios partnership', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/plugow.svg' },
-  { id: 2, title: 'Brazilian Hands', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript, MongoDB, Node.js, Express.js", description: 'Projeto realizado para captação de clietes e colaboradores para serviçoes domiciliares prestados na irlanda com prestadores brasileiros', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/brazilian.svg' },
-  { id: 3, title: 'Morais & Ribeiro', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Sass, Html, Javascript, Bootstrap", description: 'Projeto para divulgação do escritorio de advocatica e captação de possiveis clientes', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/morais.svg' },
-  { id: 4, title: 'Innovar', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript", description: 'Projeto de captação para potenciais clientes para a empresa', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/innovar.svg' },
+  { id: 1, title: 'Partnership', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Html, Tailwind css, Typescript", description: 'Desenvolvimento de um projeto para captar candidatos para a plataforma de benefícios Partnership, conectando profissionais a oportunidades exclusivas.', link: 'https://plugowtech.vercel.app/', image: '/images/plugow.svg' },
+  { id: 2, title: 'Brazilian Hands', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript, MongoDB, Node.js, Express.js", description: 'Desenvolvimento de uma plataforma para conectar clientes e prestadores de serviços domiciliares na Irlanda, facilitando a captação de profissionais qualificados e garantindo um atendimento eficiente.', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/brazilian.svg' },
+  { id: 3, title: 'Morais & Ribeiro', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Sass, Html, Javascript, Bootstrap", description: 'Desenvolvimento de um projeto para a divulgação do escritório de advocacia, visando fortalecer a presença digital e captar possíveis clientes.', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/morais.svg' },
+  { id: 4, title: 'Innovar', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript", description: 'Projeto desenvolvido para atrair e captar potenciais clientes, ampliando as oportunidades de negócios para a empresa.', link: 'https://swiperjs.com/swiper-api#modules', image: '/images/innovar.svg' },
 ];
 
 export default function Carousel() {
@@ -39,8 +39,11 @@ export default function Carousel() {
                     className='slide__item' />
                 </div>
                 <div className="container__Carrousel__Content__Text">
-                  <h3 >{item.tecnology}</h3>
-                  <p>{item.description}</p>
+                  <div className="container__Carrousel__Content__Text__1">
+                    <h3 >{item.tecnology}</h3>
+                    <p>{item.description}</p>
+                  </div>
+
                   <a href={item.link} target="_blank" rel="noopener noreferrer">Ver mais</a>
                 </div>
               </div>

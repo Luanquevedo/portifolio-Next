@@ -1,10 +1,20 @@
-@use './variables' as *; 
-body{
+@use './variables' as *;
+
+body {
     padding: 0;
     margin: 0;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     background-color: $backgroundColor;
     font-family: $font2;
-  
     
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-y: scroll; /* Permite o scroll vertical */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge */
+}
+
+/* Ocultar a barra de rolagem no Chrome, Safari e Edge */
+body::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem */
 }

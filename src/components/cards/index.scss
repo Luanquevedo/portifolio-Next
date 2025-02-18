@@ -52,11 +52,20 @@
         gap: 2rem;
 
         &__Text{
+          
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: space-around;
           font-size: 1.2rem;
-          
+          font-family: $fontLight;
+          &__1{
+            margin-top: -2rem;
+            height: 12vw;
+          }
+          p{
+            font-size: 1rem;
+            
+          }
 
           a{
             @include gradient-button-b;
@@ -66,6 +75,13 @@
             border-radius: 1rem;
             padding: 1rem;
             font-size: 1.2rem;
+
+            &:hover {
+              color: rgb(51, 51, 51);
+              box-shadow: rgba(255, 255, 255, 0.192) 2px 3px;
+              transform: scale(1.02) translateY(-0.3rem);
+              transition-duration: 300ms;
+          }
           }
         }
       }
@@ -92,7 +108,41 @@
     .container {
       width: 100vw;
       margin: 0 auto;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
+
+      img{
+        width: 22rem;
+      }
+      
+      &__Carrousel{
+        padding: 1.5rem;
+        
+        &__Content{
+          margin-top: -1rem;
+          gap: 1rem;
+  
+          &__Text{
+            font-size: 1rem;
+            &__1{
+              margin-top: -2rem;
+              height: 12vw;
+            }
+            h3{
+              font-size: 1rem;
+            }
+            p{
+              font-size: 0.8rem;
+              
+            }
+  
+            a{
+              border-radius: 0.5rem;
+              padding: 0.5rem;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
 
   
       &__Text{
@@ -111,30 +161,6 @@
       }
     }
     
-    
-    
-    .carousel-card {
-
-    
-      .carousel-image {
-        margin-bottom: 10px;
-      }
-    }
-    
-    .carousel-btn {
-      top: 65%;
- 
-      padding: 8px;
-      border-radius: 50%;
-    
-      &.prev-btn {
-        left: 40px;
-      }
-    
-      &.next-btn {
-        right: 40px;
-      }
-    }
   }
 
   @media (max-width: 768px) {
@@ -142,6 +168,62 @@
       width: 100vw;
       margin-top: 150px;
       margin-bottom: 100px;
+
+      img{
+        width: 10rem;
+      }
+      
+      &__Carrousel{
+       font-size: 0.7rem;
+        padding: 1rem;
+        
+        &__Content{
+          display: flex;
+          flex-direction: column;
+          margin-top: -0.5rem;
+          gap: 0.1rem;
+  
+          &__Text{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.6rem;
+            &__1{
+              margin-top: 0rem;
+              height: 15rem;
+            }
+            h3{
+              font-size: 0.7rem;
+            }
+            p{
+              font-size: 0.7rem;
+              
+            }
+  
+            a{
+              border-radius: 0.5rem;
+              padding: 0.3rem;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+  
+      &__Text{
+        
+        font-size: 17px;
+        margin-bottom: 50px;
+        gap: 10px;
+
+  
+        h2{
+          @include gradient-text;
+        }
+        a{
+          font-size: 19px;
+        }
+      }
+    
   
       &__Text{
     
@@ -156,6 +238,9 @@
         a{
           font-size: 10px;
         }
+
+        
+
       }
     }
   }
