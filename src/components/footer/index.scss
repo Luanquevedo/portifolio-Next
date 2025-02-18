@@ -76,3 +76,35 @@
 
     }
 }
+
+@media (max-width: 768px) {
+    .containerFooter {
+        &__Content {
+            width: 80vw;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.4;
+        }
+    
+        &__Button {
+            gap: 1rem;
+    
+            button {
+    
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+    
+        &__Contact{
+
+            gap: 1rem;
+            text-align: center;
+            font-size: 0.65rem;
+            text-transform: none;
+        }
+    
+    }
+
+}

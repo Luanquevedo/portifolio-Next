@@ -24,7 +24,6 @@ export default function Carousel() {
       <Swiper
         slidesPerView={2}
         modules={[Pagination, Autoplay]}
-        pagination
         autoplay={{ delay: 3000, disableOnInteraction: true }}
         speed={700}>
         {projetos.map((item) => (

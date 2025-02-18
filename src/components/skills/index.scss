@@ -76,18 +76,18 @@
 
 @media (max-width:768px) {
     .skills {
-
+        margin-top: -3rem;
         &__Header {
-            margin-left: 5vw;
-            font-size: 12px;
+            margin-left: 1rem;
+            font-size: 1rem;
         }
 
         &__Section1 {
             padding: 2vw 15vw 3vw 15vw;
-            gap: 3.5vw;
+            gap: 1rem;
 
             &__Item {
-                width: 50px;
+                width: 4rem;
             }
         }
     }

@@ -212,7 +212,7 @@
     
   
       &__Text{
-        width: 80vw;
+        width: 85vw;
         margin-top: 1rem;
         margin-bottom: -1rem;
         gap: 0.5rem;
@@ -220,10 +220,10 @@
   
         h2{
           @include gradient-text;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
         a{
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
 
         

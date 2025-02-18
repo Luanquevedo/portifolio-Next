@@ -140,6 +140,7 @@
         margin-top: 15rem;
         flex-direction: column-reverse;
         gap: 1rem;
+        margin-bottom: -0.9rem;
 
 
 
@@ -168,6 +169,7 @@
             }
 
             &__Button {
+                display: none;
                 gap: 2rem;
                 margin-top: 1rem;
 
