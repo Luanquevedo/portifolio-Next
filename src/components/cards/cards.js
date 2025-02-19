@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from 'swiper/modules';
+import CardProject from "../card2/cardmodal";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -23,6 +24,7 @@ const maisprojetos = [
 
 export default function Carousel() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   return (
@@ -63,16 +65,20 @@ export default function Carousel() {
       </Swiper>
       {/*Modal*/}
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <p>teste</p>
-        {maisprojetos.map((item) => (
-          <img src={item.image}
-            alt={item.title}
-            className='slide__item' />
-        ))
-}
-      </Modal >
-  <div className="container__Carousel">
-  </div>
+        {maisprojetos.map((maisprojetos, index) => (
+          <div className='Cards' key={index}>
+            <CardProject
+              title={maisprojetos.title}
+              image={maisprojetos.image}
+              tecnology={maisprojetos.tecnology}
+              description={maisprojetos.description}
+              link={maisprojetos.link}
+            />
+          </div>
+        ))}
+      </Modal>
+      <div className="container__Carousel">
+      </div>
 
 
     </div >

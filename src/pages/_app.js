@@ -5,6 +5,8 @@ import '../components/skills/index.scss';
 import '../components/navbar/index.scss';
 import '../components/footer/index.scss';
 import '../components/cards/index.scss';
+import '../components/card2/index.scss'
+import '../components/modal/index.scss'
 
 
 function MyApp({ Component, pageProps }) {

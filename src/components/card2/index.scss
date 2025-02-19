@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixin' as*;
+.container__C{
+    width: 60rem;
+    height: 25rem;    
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundColor;
+    border-radius: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    color: white;
+    
+    &__D{
+      display: flex;
+      
+      gap: 1rem;
+
+      &__T{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        font-family: $fontLight;
+        
+        
+      }
+    }
+  }
