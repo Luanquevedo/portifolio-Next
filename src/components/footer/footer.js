@@ -24,11 +24,6 @@ const Footer = () => {
                         <img src='images/instagram.svg' />
                     </a>
                 </button>
-                <button>
-                    <a href='https://github.com/Luanquevedo' target='blank'>
-                        <img src='images/email.svg' />
-                    </a>
-                </button>
             </div>
             <div className='containerFooter__Contact'>
                 <p>Luan Quevedo © 2025</p>

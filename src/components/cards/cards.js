@@ -1,10 +1,11 @@
+import { useState } from "react";
+import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from 'swiper/modules';
-
-// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 
 const projetos = [
   { id: 1, title: 'Partnership', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Html, Tailwind css, Typescript", description: 'Desenvolvimento de um projeto para captar candidatos para a plataforma de benefícios Partnership, conectando profissionais a oportunidades exclusivas.', link: 'https://plugowtech.vercel.app/', image: '/images/plugow.svg' },
@@ -12,14 +13,24 @@ const projetos = [
   { id: 3, title: 'Morais & Ribeiro', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Sass, Html, Javascript, Bootstrap", description: 'Desenvolvimento de um projeto para a divulgação do escritório de advocacia, visando fortalecer a presença digital e captar possíveis clientes.', link: 'https://morais-ribeiro-advocacia.vercel.app/', image: '/images/morais.svg' },
   { id: 4, title: 'Innovar', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript", description: 'Projeto desenvolvido para atrair e captar potenciais clientes, ampliando as oportunidades de negócios para a empresa.', link: 'https://innovar-q-engenharia-72vm.vercel.app/', image: '/images/innovar.svg' },
 ];
+const maisprojetos = [
+  { id: 1, title: 'Partnership', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Html, Tailwind css, Typescript", description: 'Desenvolvimento de um projeto para captar candidatos para a plataforma de benefícios Partnership, conectando profissionais a oportunidades exclusivas.', link: 'https://plugowtech.vercel.app/', image: '/images/plugow.svg' },
+  { id: 2, title: 'Brazilian Hands', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript, MongoDB, Node.js, Express.js", description: 'Desenvolvimento de uma plataforma para conectar clientes e prestadores de serviços domiciliares na Irlanda, facilitando a captação de profissionais qualificados e garantindo um atendimento eficiente.', link: 'https://brazilian-hands3.vercel.app/', image: '/images/brazilian.svg' },
+  { id: 3, title: 'Morais & Ribeiro', tecnology: "Tecnologias Utilizadas: Next.js, React.js, Sass, Html, Javascript, Bootstrap", description: 'Desenvolvimento de um projeto para a divulgação do escritório de advocacia, visando fortalecer a presença digital e captar possíveis clientes.', link: 'https://morais-ribeiro-advocacia.vercel.app/', image: '/images/morais.svg' },
+  { id: 4, title: 'Innovar', tecnology: "Tecnologias Utilizadas: React.js, Sass, Html, Javascript", description: 'Projeto desenvolvido para atrair e captar potenciais clientes, ampliando as oportunidades de negócios para a empresa.', link: 'https://innovar-q-engenharia-72vm.vercel.app/', image: '/images/innovar.svg' },
+];
+
 
 export default function Carousel() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div className="container">
       <div className='container__Text'>
         <h2>PROJETOS RECENTES</h2>
         <p>|</p>
-        <a>Visualizar mais</a>
+        <a onClick={openModal}>Visualizar mais</a>
       </div>
       <Swiper
         slidesPerView={2}
@@ -50,10 +61,20 @@ export default function Carousel() {
         ))}
 
       </Swiper>
-      <div className="container__Carousel">
-      </div>
+      {/*Modal*/}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <p>teste</p>
+        {maisprojetos.map((item) => (
+          <img src={item.image}
+            alt={item.title}
+            className='slide__item' />
+        ))
+}
+      </Modal >
+  <div className="container__Carousel">
+  </div>
 
 
-    </div>
+    </div >
   );
 }
